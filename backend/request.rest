@@ -1,0 +1,100 @@
+// Create a User
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+// get all users
+
+GET http://localhost:5000/users
+
+###
+// Get single user
+GET http://localhost:5000/users/22accff0-9298-4f62-be5e-c867aee80945
+
+###
+// update user
+PATCH http://localhost:5000/users/22accff0-9298-4f62-be5e-c867aee80945
+Content-Type: application/json
+
+{
+    "name": "hedexx",
+    "email": "hedexx@gmail.com",
+    "password": "",
+    "confPassword": "",
+    "role": "admin"
+}
+
+###
+// delete user
+DELETE http://localhost:5000/users/22accff0-9298-4f62-be5e-c867aee80945
+
+###
+// Login admin
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "123456"
+}
+
+###
+// login user
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "user@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/me
+
+###
+// Logout user
+DELETE http://localhost:5000/logout
+
+
+###
+// get all products
+GET http://localhost:5000/products
+
+###
+// get single products
+GET http://localhost:5000/products/fa3b9175-af77-439c-b30a-a4e02d592fce
+
+
+###
+// POST Data Product
+POST http://localhost:5000/products
+Content-Type: application/json
+
+{
+    "name": "Product 5",
+    "price": 3500
+}
+
+###
+// Product update
+
+PATCH http://localhost:5000/products/fa3b9175-af77-439c-b30a-a4e02d592fce
+Content-Type: application/json
+
+{
+    "name": "Product Updated",
+    "price": 974
+}
+
+###
+// Product Delete
+
+DELETE http://localhost:5000/products/34fe1546-b9f5-4a9a-98f7-2d7d35d82a11

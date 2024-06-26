@@ -1,0 +1,12 @@
+BUKA TERMINAL LALU
+
+npm start
+
+atau
+
+nodemon index
+
+NOTE! :
+(pastikan cek nodemon -v atau install nodemon terlebih dahulu)
+
+TERIMA KASIH!!!
